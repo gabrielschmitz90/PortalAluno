@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Aluno - Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#2563eb">
+</head>
+<body class="auth-page">
+    <header class="site-header">
+        <div class="brand">Portal do Aluno</div>
+        <button id="themeToggle" class="icon-btn" aria-label="Alternar tema">☀️</button>
+    </header>
+
+    <main id="container" class="auth-card">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Bem-vindo de volta</h1>
+                <p class="muted">Entre com sua conta para continuar.</p>
+            </div>
+            <div class="hero-illustration" aria-hidden="true">
+                <svg width="140" height="110" viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0" y="0" width="160" height="120" rx="12" fill="url(#g)" />
+                    <defs>
+                        <linearGradient id="g" x1="0" x2="1">
+                            <stop offset="0" stop-color="#60a5fa" />
+                            <stop offset="1" stop-color="#7c3aed" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </section>
+
+        <form id="loginForm" action="/login" method="POST" class="form-card" autocomplete="on">
+            <h2>Entrar</h2>
+
+            <label class="field">
+                <input type="text" name="nome" id="nome" required placeholder=" ">
+                <span class="label">Nome</span>
+            </label>
+
+            <label class="field">
+                <input type="password" name="senha" id="senha" required placeholder=" ">
+                <span class="label">Senha</span>
+            </label>
+
+            <div class="actions">
+                <button type="submit" class="main-button">Entrar</button>
+            </div>
+
+            <div class="auth-footer">
+                <p>Ainda não tem conta? <a href="telaCadastro.html">Criar Conta</a></p>
+            </div>
+        </form>
+
+        <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
