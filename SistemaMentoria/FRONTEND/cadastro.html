@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Portal do Aluno - Cadastro</title>
+    <link rel="stylesheet" href="/SistemaMentoria/FRONTEND/style.css">
+</head>
+<body>
+    
+    <header class="site-header">
+        <div class="brand">Portal do Aluno</div>
+        <button id="themeToggle" class="icon-btn" aria-label="Alternar tema">🌙</button>
+    </header>
+
+    <main class="centered-container">
+        <div class="centered-wrapper">
+            <form id="signupForm" class="form-card" autocomplete="off">
+                <h2>Crie sua conta</h2>
+                <p class="muted" style="text-align:center; margin-bottom: 20px;">Preencha os dados abaixo para se matricular.</p>
+
+                <label class="field">
+                    <input type="text" name="nome" id="nome" required placeholder=" ">
+                    <span class="label">Nome Completo</span>
+                </label>
+
+                <label class="field">
+                    <input type="email" name="email" id="email" required placeholder=" ">
+                    <span class="label">E-mail Institucional</span>
+                </label>
+
+                <label class="field">
+                    <input type="password" name="senha" id="senha" required placeholder=" ">
+                    <span class="label">Senha</span>
+                </label>
+
+                <label class="field">
+                    <input type="password" name="confirmaSenha" id="confirmaSenha" required placeholder=" ">
+                    <span class="label">Confirmar Senha</span>
+                </label>
+
+                <div class="actions">
+                    <button type="submit" class="main-button">Finalizar Cadastro</button>
+                </div>
+
+                <div class="auth-footer">
+                    <p>Já possui uma conta? <a href="/SistemaMentoria/FRONTEND/index.html">Fazer Login</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <div id="toast" class="toast" role="status"></div>
+    <script src="/SistemaMentoria/FRONTEND/script.js" defer></script>
+</body>
+</html>
